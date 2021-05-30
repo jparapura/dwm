@@ -27,8 +27,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Brave",     NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "FloatHome", NULL,       NULL,       1 << 0,       1,           -1 },
+	{ "GoTop",     NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Signal",    NULL,       NULL,       1 << 7,       0,           -1 },
+	// { "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	// { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
