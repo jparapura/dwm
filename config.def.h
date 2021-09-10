@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "www", "dev1", "dev2", "_", "_", "anki", "chat", "top", "home" };
+static const char *tags[] = { "www", "dev1", "dev2", "ssh", "media", "anki", "chat", "top", "home" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -34,7 +34,8 @@ static const Rule rules[] = {
 	// { "HomeTab",   NULL,       NULL,       1 << 8,       0,           -1 },
 	// { "FloatHome", NULL,       NULL,       1 << 0,       1,           -1 },
 	// { "GoTop",     NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "Signal",    NULL,       NULL,       1 << 7,       0,           -1 },
+	{ "Signal",    NULL,       NULL,       1 << 6,       0,           -1 },
+	{ "qBittorrent",    NULL,       NULL,       1 << 8,       0,           -1 },
 	// { "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	// { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
@@ -70,7 +71,7 @@ static const char *termcmd[]  = { "st", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+//	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
