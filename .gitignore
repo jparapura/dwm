@@ -3,3 +3,12 @@ drw.o
 dwm
 dwm.o
 util.o
+config.def.h.orig
+config.def.h.rej
+config.mk.orig
+drw.c.orig
+drw.c.rej
+drw.h.orig
+drw.h.rej
+dwm.c.orig
+dwm.c.rej
